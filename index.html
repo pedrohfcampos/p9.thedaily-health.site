@@ -5,54 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modern Professional Age Verification</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap" rel="stylesheet">
-    
+    <!-- TikTok Pixel Code Start -->
 <script>
-      // Retrieve a parameter value from the URL
-      function getQueryParam(param) {
-        let urlParams = new URLSearchParams(window.location.search);
-        return urlParams.get(param);
-      }
+!function (w, d, t) {
+  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
+var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script")
+;n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
 
-      // Save relevant parameters to Local Storage
-      function saveSubIDs() {
-        let subid = getQueryParam('subid');
-        let subid2 = getQueryParam('subid2');
-        let subid3 = getQueryParam('subid3');
-        let subid4 = getQueryParam('subid4');
-        let subid5 = getQueryParam('subid5');
 
-        if (subid) localStorage.setItem('subid', subid);
-        if (subid2) localStorage.setItem('subid2', subid2);
-        if (subid3) localStorage.setItem('subid3', subid3);
-        if (subid4) localStorage.setItem('subid4', subid4);
-        if (subid5) localStorage.setItem('subid5', subid5);
-      }
-
-      // Append saved IDs to links on the page
-      function appendSubIDsToLinks() {
-        let subid = localStorage.getItem('subid');
-        let subid2 = localStorage.getItem('subid2');
-        let subid3 = localStorage.getItem('subid3');
-        let subid4 = localStorage.getItem('subid4');
-        let subid5 = localStorage.getItem('subid5');
-
-        document.querySelectorAll('a').forEach(link => {
-          let url = new URL(link.href);
-          if (subid) url.searchParams.set('subid', subid);
-          if (subid2) url.searchParams.set('subid2', subid2);
-          if (subid3) url.searchParams.set('subid3', subid3);
-          if (subid4) url.searchParams.set('subid4', subid4);
-          if (subid5) url.searchParams.set('subid5', subid5);
-
-          link.href = url.toString();
-        });
-      }
-
-      document.addEventListener('DOMContentLoaded', () => {
-        saveSubIDs();
-        appendSubIDsToLinks();
-      });
-    </script>
+  ttq.load('CT95VPBC77U9RNPHI4O0');
+  ttq.page();
+}(window, document, 'ttq');
+</script>
+<!-- TikTok Pixel Code End -->
     <style>
     body {
         font-family: 'Open Sans', sans-serif;
